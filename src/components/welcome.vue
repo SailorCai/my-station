@@ -13,23 +13,28 @@
           <p class="line1">这是一个个人网站</p>
           <p class="line2">—— 来自胜龙</p>
         </div>
-        <div class="mid_mid">
-          <el-button plain icon="el-icon-search" size="mini" round class="csl_btn"></el-button>
-        </div>
+        <v-nav></v-nav>
         <div class="mid_bottom"></div>
       </div>
-      <div class="bottom"></div>
+      <div class="bottom">
+        <div class="bottom_word">If you do not learn to think when you are young, you may never learn. &nbsp;&nbsp;&nbsp;&nbsp;——Edison</div>
+        <div class="bottom_text">友情链接：<a href="http://www.gnnu.cn/" target="_blank">赣南师范大学</a><a href="http://dz.cppfoto.com/activity/home.aspx?activity=309" target="_blank">围屋之乡</a><a href="http://www.jxln.ccoo.cn/" target="_blank">龙南信息网</a></div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import nav from '@/components/nav/nav'
 export default {
   name: 'welcome',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    'v-nav': nav
   }
 }
 </script>
@@ -66,7 +71,7 @@ export default {
   }
   .top{
     width:100%;
-    height:30%;
+    height:20%;
     position:relative;
   }
   .top_up{
@@ -93,7 +98,7 @@ export default {
   }
   .middle{
     width:100%;
-    height:40%;
+    height:50%;
     position:relative;
   }
   .mid_top{
@@ -109,10 +114,6 @@ export default {
   .mid_top .line2{
     text-align:right;
   }
-  .mid_mid{
-    width:100%;
-    max-width:600px;
-  }
   .csl_btn{
     background-color:rgba(0,0,0,0);
     color:white;
@@ -127,5 +128,29 @@ export default {
     width:100%;
     height:30%;
     position:relative;
+  }
+  .bottom_word{
+    width:80%;
+    padding:30px 10%;
+    font-size:14px;
+    font-weight:normal;
+    text-align:center;
+    position:absolute;
+    top:0px;
+  }
+  .bottom_text{
+    width:80%;
+    padding:30px 10%;
+    font-size:12px;
+    font-weight:normal;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+  }
+  .bottom_text a{
+    color:#3DB8F5;
+    display:inline-block;
+    padding:0 5px;
+    cursor:pointer;
   }
 </style>
