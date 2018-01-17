@@ -7,7 +7,7 @@ app.get('/', function(req, res){
   res.send('hello world');
 });
 
-var server = app.listen(3001, function(){
+var server = app.listen(3002, function(){
   var host = server.address().address;
   var port = server.address().port;
 
