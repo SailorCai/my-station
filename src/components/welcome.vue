@@ -44,7 +44,7 @@ export default {
   /*手机样式*/
   @media screen and (max-width:500px){
     .page_wrapper{
-      background-image:url(../../static/images/1.jpg);
+      /* background-image:url(../../static/images/1.jpg); */
     }
     .top_down{font-size:20px !important;}
     .mid_top{font-size:15px;}
@@ -52,8 +52,8 @@ export default {
   /*pc样式*/
   @media screen and (min-width:500px){
     .page_wrapper{
-      background-image:url(../../static/images/2.jpg);
-    }
+      /* background-image:url(../../static/images/2.jpg);
+          } */
     .top_down{font-size:30px !important;}
     .mid_top{font-size:20px;}
   }
